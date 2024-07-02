@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoInput = () => {
+const TodoList = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const TodoInput = () => {
   )
 }
 
-export default TodoInput
+export default TodoList

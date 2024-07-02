@@ -1,8 +1,9 @@
 import React from 'react'
+import TodoCard from './TodoCard'
 
 const TodoList = () => {
     let todos = [
-        'kip Breakfast',
+        'Skip Breakfast',
         'Skip lunch',
         'Eat Supper'
     ]
@@ -11,9 +12,9 @@ const TodoList = () => {
     <ul className='main'>
     {todos.map((todo, todoIndex)=>{
         return (
-            <li className='todoItem' keys={todoIndex}>{todo}
-            <i class="fa-solid fa-pen-to-square"></i>
-            </li>
+            <TodoCard key={todoIndex}>
+                <p>{todo}</p>
+            </TodoCard>
             
         )
     })}

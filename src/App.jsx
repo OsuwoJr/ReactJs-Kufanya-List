@@ -4,14 +4,14 @@ import TodoList from './components/TodoList'
 
 const App = () => {
  
-const [todos, setTodos] = useState ([
-    'Skip Breakfast',
-    'Skip lunch',
-    'Eat Supper'
-])
+const [todos, setTodos] = useState ([])
+function handleAddTodos(newTodo){
+  const newTodoList = [...todos, newTodo]
+  setTodos(newTodoList)
+}
   return (
     <>
-    <TodoInput/>
+    <TodoInput handleAddTodos={handleAddTodos}/>
     <TodoList todos={todos}/>
       
     </>

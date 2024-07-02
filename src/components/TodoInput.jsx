@@ -2,9 +2,10 @@ import React from 'react'
 
 const TodoInput = () => {
   return (
-    <div>
-      
-    </div>
+    <header>
+      <input placeholder='ingiza kitu/enter something'/>
+      <button>ongeza/add</button>
+    </header>
   )
 }
 

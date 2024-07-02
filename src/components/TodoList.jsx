@@ -2,16 +2,19 @@ import React from 'react'
 
 const TodoList = () => {
     let todos = [
-        'kip Breakfas',
+        'kip Breakfast',
         'Skip lunch',
         'Eat Supper'
     ]
   return (
 
-    <ul>
+    <ul className='main'>
     {todos.map((todo, todoIndex)=>{
         return (
-            <li keys={todoIndex}>{todo}</li>
+            <li className='todoItem' keys={todoIndex}>{todo}
+            <i class="fa-solid fa-pen-to-square"></i>
+            </li>
+            
         )
     })}
     </ul>

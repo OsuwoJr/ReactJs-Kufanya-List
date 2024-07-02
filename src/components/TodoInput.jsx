@@ -4,7 +4,7 @@ const TodoInput = () => {
   return (
     <header>
       <input placeholder='ingiza kitu/enter something'/>
-      <button></button>
+      <button>ongeza/add</button>
     </header>
   )
 }

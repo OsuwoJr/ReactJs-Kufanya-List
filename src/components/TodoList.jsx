@@ -1,12 +1,8 @@
 import React from 'react'
 import TodoCard from './TodoCard'
 
-const TodoList = () => {
-    let todos = [
-        'Skip Breakfast',
-        'Skip lunch',
-        'Eat Supper'
-    ]
+const TodoList = (props) => {
+    const {todos} = props
   return (
 
     <ul className='main'>
